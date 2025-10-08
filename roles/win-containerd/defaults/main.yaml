@@ -1,0 +1,5 @@
+---
+skip_hypervisor_support_check: false
+cni_bin_path: "c:/opt/cni/bin"
+cni_config_path: "c:/etc/cni/net.d"
+containerd_path: "{{ ansible_env.ProgramFiles }}\\containerd"

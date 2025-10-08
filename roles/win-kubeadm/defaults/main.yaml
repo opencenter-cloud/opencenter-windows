@@ -1,0 +1,6 @@
+---
+hostname_override: "{{ ansible_hostname }}"
+kubernetes_path: "C:\\k"
+kubelet_log_path: "C:\\var\\log\\kubelet"
+nssm_install_directory: "C:\\Program Files\\nssm"
+kubernetes_version: "{{ kube_version }}"
