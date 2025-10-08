@@ -296,6 +296,6 @@
       The kubelet service has been configured with:
       - Node IP: {{ ansible_host }}
       - Hostname override: {{ hostname_override }}
-      - Load balancer endpoint: lb-apiserver.kubernetes.local -> {{ vrrp_ip }}
+      - Load balancer endpoint: lb-apiserver.kubernetes.local -> {{ k8s_internal_ip }}
       
       Join command executed: {{ join_command_output.stdout.strip() }}
