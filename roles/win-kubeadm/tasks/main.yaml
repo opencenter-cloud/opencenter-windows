@@ -166,7 +166,7 @@
 - name: Add lb-apiserver.kubernetes.local to hosts file
   win_lineinfile:
     path: C:\Windows\System32\drivers\etc\hosts
-    line: "{{ k8s_internal_vip }} lb-apiserver.kubernetes.local"
+    line: "{{ k8s_internal_ip }} lb-apiserver.kubernetes.local"
     state: present
 
 # Clean up temporary files
