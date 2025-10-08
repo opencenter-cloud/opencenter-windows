@@ -62,6 +62,11 @@
     path: "C:\\temp"
     state: directory
 
+- name: Create Calico directory https://github.com/projectcalico/calico/pull/10691
+  win_file:
+    path: "/var/run/calico/endpoint-status"
+    state: directory
+
 - name: Download NSSM
   win_get_url:
     url: "https://k8stestinfrabinaries.blob.core.windows.net/nssm-mirror/nssm-2.24.zip"
